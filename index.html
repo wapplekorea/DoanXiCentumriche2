@@ -4,11 +4,13 @@
 <!-- IP 차단 -->
 <script>
 (function(){
-  var BLOCKED = ['112.166.9.208','220.83.207.73'];
+  var BLOCKED_PREFIXES = ['112.166.9.','220.83.207.'];
   fetch('https://api.ipify.org?format=json')
     .then(function(r){return r.json();})
     .then(function(d){
-      if(BLOCKED.indexOf(d.ip) !== -1){
+      var ip = d.ip;
+      var blocked = BLOCKED_PREFIXES.some(function(p){return ip.indexOf(p)===0;});
+      if(blocked){
         document.documentElement.style.display='none';
         window.location.replace('about:blank');
       }

@@ -121,7 +121,15 @@
   #privacy-modal .pm-close{position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;line-height:1}
   @media(max-width:600px){#privacy-modal .pm-box{padding:28px 20px}}
 
-</style>
+
+    /* 모바일 가로 오버플로우 방지 */
+    html, body { overflow-x: hidden; }
+    @media(max-width:768px){
+      .form-wrap { grid-template-columns: 1fr !important; }
+      .visit .form-side { min-width: 0; max-width: 100%; box-sizing: border-box; }
+      .consult-form { min-width: 0; max-width: 100%; box-sizing: border-box; }
+    }
+  </style>
 </head>
 <body>
   <div class="topline"><div class="wrap"><span>도안 생활권에 입성하는 브랜드 대단지</span><span>분양상담 · 방문예약 · 실입주·투자 문의 1599-8766</span></div></div>

@@ -165,10 +165,18 @@
     .sticky a:active{transform:scale(0.95) !important;transition-duration:60ms !important}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:50ms !important;animation-duration:50ms !important}.premium-card:hover,.unit-card:hover,.loc:hover,.feature:hover{transform:none !important}}
   </style>
+  <style>
+    /* 헤더 관심고객 등록 pill */
+    .register-pill{background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.42);color:#fff;border-radius:999px;padding:14px 22px;font-weight:950;font-size:18px;white-space:nowrap;letter-spacing:-.02em;transition:transform 250ms cubic-bezier(0.34,1.56,0.64,1),background 200ms ease}
+    .register-pill:hover{background:rgba(255,255,255,.22);transform:scale(1.04)}
+    .register-pill:active{transform:scale(0.96) !important;transition-duration:70ms !important}
+    .header-cta{display:flex;gap:10px;align-items:center}
+    @media(max-width:940px){.register-pill{display:none}}
+  </style>
 </head>
 <body>
   <div class="topline"><div class="wrap"><span>도안 생활권에 입성하는 브랜드 대단지</span><span>분양상담 · 방문예약 · 실입주·투자 문의 1599-8766</span></div></div>
-  <header class="header"><div class="wrap nav"><a class="logo" href="#top">도안자이 센텀리체<span>DOAN XI CENTUM RICHE</span></a><nav class="menu"><a href="#premium">프리미엄</a><a href="#business">사업안내</a><a href="#complex">단지정보</a><a href="#unit">타입안내</a><a href="#visit">관심고객 등록</a></nav><a class="phone-pill" href="tel:15998766">1599-8766</a></div></header>
+  <header class="header"><div class="wrap nav"><a class="logo" href="#top">도안자이 센텀리체<span>DOAN XI CENTUM RICHE</span></a><nav class="menu"><a href="#premium">프리미엄</a><a href="#business">사업안내</a><a href="#complex">단지정보</a><a href="#unit">타입안내</a></nav><div class="header-cta"><a class="register-pill" href="#visit">관심고객 등록</a><a class="phone-pill" href="tel:15998766">1599-8766</a></div></div></header>
 
   <main id="top">
     <section class="hero"><div class="hero-bg"><img src="assets/hero-render.webp" alt="도안자이 센텀리체 조감도"></div><div class="wrap"><div><span class="eyebrow">DAEJEON DOAN · XI BRAND</span><h1>자이의 정점에서<br>도안을 완성하다</h1><p class="hero-copy">대전 도안 생활권에 들어서는 자이 브랜드 대단지. 선호 타입과 실입주·투자, 분양 조건을 빠르게 확인하고 방문 상담을 예약하세요.</p><div class="hero-bullets"><span>선착순 동·호 상담</span><span>방문예약 상담</span><span>84㎡·99㎡·115㎡·134㎡P</span><span>대표번호 1599-8766</span></div><div class="hero-actions"><a class="btn primary" href="tel:15998766">전화상담</a><a class="btn ghost" href="#visit">관심고객 등록</a></div></div><aside class="leadbox"><h2>방문상담 빠른 문의</h2><p>성함과 연락처를 남기기 전, 전화 상담이 가장 빠릅니다. 아래 항목은 상담 시 확인할 정보입니다.</p><div class="field"><label>관심 타입</label><select><option>84㎡</option><option>99㎡</option><option>115㎡</option><option>134㎡P</option><option>상담 후 결정</option></select></div><div class="field"><label>문의 내용</label><input value="분양가 / 실입주·투자 / 방문예약" readonly></div><a class="btn primary submit" href="tel:15998766">전화상담</a><p class="form-note">※ 현재 페이지에서는 대표번호 전화 연결로 상담을 접수합니다.</p></aside></div></section>
